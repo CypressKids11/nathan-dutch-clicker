@@ -9,6 +9,9 @@ let clickCounter = 0;
 let cooking = false;
 let sizzleSound = new Audio("./sounds/sizzle.mp3");
 let openSound = new Audio("./sounds/open.mp3");
+let kitchenSound = new Audio("./sounds/kitchen.mp3");
+kitchenSound.loop = true;
+kitchenSound.play();
 
 stove.addEventListener("click",()=>{
     if(cooking){

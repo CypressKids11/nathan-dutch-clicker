@@ -15,7 +15,9 @@ const monsterCoinsLabel = document.querySelector(".monster-coins");
 let monsterCoins = 0;
 monsterCoinsLabel.innerHTML = "Monster Coins: " + monsterCoins;
 let pop = new Audio("./sounds/pop.mp3");
-
+let farmSound = new Audio("./sounds/road.mp3");
+farmSound.loop = true;
+farmSound.play()
 let growTime = 5500;
 let plotCounter = 0;    //maintains current plot to plant at
 let plotList = [plot1, plot2, plot3, plot4, plot5, 
